@@ -1,0 +1,1338 @@
+--------------------KlipperScreen Log Start--------------------
+Git Version: v0.3.2-35-ga77148b
+2023-05-16 23:02:44,752 [screen.py:main()] - KlipperScreen version: v0.3.2-35-ga77148b
+2023-05-16 23:02:44,842 [config.py:get_config_file_location()] - Passed config (-c): /home/pi/KlipperScreen.conf
+2023-05-16 23:02:44,844 [config.py:__init__()] - Config path location: /home/pi/KlipperScreen/ks_includes/defaults.conf
+2023-05-16 23:02:44,858 [config.py:__init__()] - Configuration validated succesfuly
+2023-05-16 23:02:44,859 [config.py:__init__()] - Configured printers: [
+  {
+    "Printer": {
+      "moonraker_host": "127.0.0.1",
+      "moonraker_port": "7125",
+      "moonraker_api_key": ""
+    }
+  }
+]
+2023-05-16 23:02:44,905 [config.py:create_translations()] - Selected lang: None OS lang: en_GB
+2023-05-16 23:02:44,905 [config.py:install_language()] - Using system lang
+2023-05-16 23:02:44,906 [config.py:install_language()] - Using lang en
+2023-05-16 23:02:44,911 [screen.py:__init__()] - Screen resolution: 800x480
+2023-05-16 23:02:44,913 [KlippyGtk.py:__init__()] - Font size: 16.6 (medium)
+2023-05-16 23:02:45,327 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2023-05-16 23:02:45,337 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2023-05-16 23:02:45,352 [screen.py:initial_connection()] - Default printer: None
+2023-05-16 23:02:45,353 [screen.py:connect_printer()] - Connecting to printer: Printer
+2023-05-16 23:02:45,353 [screen.py:_load_panel()] - Loading panel: splash_screen
+2023-05-16 23:02:45,353 [screen.py:_load_panel()] - Panel path: /home/pi/KlipperScreen/panels/splash_screen.py
+2023-05-16 23:02:45,396 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-16 23:02:45,418 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-16 23:02:45,429 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/access/oneshot_token
+2023-05-16 23:02:45,430 [KlippyWebsocket.py:connect()] - Starting websocket thread
+2023-05-16 23:02:45,440 [_logging.py:info()] - Websocket connected
+2023-05-16 23:02:45,440 [KlippyWebsocket.py:on_open()] - Moonraker Websocket Open
+2023-05-16 23:02:45,455 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-16 23:02:45,474 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-16 23:02:45,485 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-05-16 23:02:45,609 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-05-16 23:02:45,613 [printer.py:reinit()] - Klipper version: v0.11.0-200-g7511151a
+2023-05-16 23:02:45,613 [printer.py:reinit()] - # Extruders: 1
+2023-05-16 23:02:45,613 [printer.py:reinit()] - # Temperature devices: 3
+2023-05-16 23:02:45,613 [printer.py:reinit()] - # Fans: 1
+2023-05-16 23:02:45,613 [printer.py:reinit()] - # Output pins: 4
+2023-05-16 23:02:45,614 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-05-16 23:02:45,894 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&extruder&heater_bed&temperature_sensor raspberry_pi&temperature_sensor Caisson&fan&filament_switch_sensor Fusible_Thermique&output_pin relay_1&output_pin relay_2&output_pin relay_3&output_pin Power_Hypercube
+2023-05-16 23:02:45,897 [printer.py:change_state()] - Changing state from 'disconnected' to 'ready'
+2023-05-16 23:02:45,897 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-16 23:02:45,912 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-16 23:02:45,923 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-16 23:02:45,932 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-16 23:02:45,934 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-16 23:02:45,935 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-05-16 23:02:45,935 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-05-16 23:02:45,937 [screen.py:init_printer()] - Printer initialized
+2023-05-16 23:02:45,990 [screen.py:_load_panel()] - Loading panel: main_menu
+2023-05-16 23:02:45,990 [screen.py:_load_panel()] - Panel path: /home/pi/KlipperScreen/panels/main_menu.py
+2023-05-16 23:02:46,018 [main_menu.py:initialize()] - ### Making MainMenu
+2023-05-16 23:02:46,072 [main_menu.py:add_device()] - Adding device: extruder
+2023-05-16 23:02:46,077 [main_menu.py:add_device()] - Adding device: heater_bed
+2023-05-16 23:02:46,082 [main_menu.py:add_device()] - Adding device: temperature_sensor raspberry_pi
+2023-05-16 23:02:46,087 [main_menu.py:add_device()] - Adding device: temperature_sensor Caisson
+2023-05-16 23:02:46,092 [screen.py:attach_panel()] - Current panel hierarchy: main_panel
+2023-05-16 23:02:48,277 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-16 23:02:48,289 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-16 23:02:48,299 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-16 23:02:48,300 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-16 23:08:38,366 [KlippyWebsocket.py:on_close()] - Server Shutdown
+2023-05-16 23:08:38,367 [KlippyWebsocket.py:on_close()] - Moonraker Websocket Closed
+2023-05-16 23:08:38,373 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-16 23:08:38,378 [screen.py:connect_printer()] - Connecting to printer: Printer
+2023-05-16 23:08:38,383 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-16 23:08:38,391 [KlippyRest.py:send_request()] - host=127.0.0.1, port=7125>>Max retries exceeded with url>>Failed to establish a new connection>>[Errno 111] Connection refused
+2023-05-16 23:08:48,266 [KlippyWebsocket.py:reconnect()] - Attempting to reconnect
+2023-05-16 23:08:48,285 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-16 23:08:48,302 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/access/oneshot_token
+2023-05-16 23:08:48,303 [KlippyWebsocket.py:connect()] - Starting websocket thread
+2023-05-16 23:08:48,319 [_logging.py:info()] - Websocket connected
+2023-05-16 23:08:48,319 [KlippyWebsocket.py:on_open()] - Moonraker Websocket Open
+2023-05-16 23:08:48,333 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-16 23:08:48,350 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-16 23:08:48,364 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-05-16 23:08:48,533 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-05-16 23:08:48,541 [printer.py:reinit()] - Klipper version: v0.11.0-200-g7511151a
+2023-05-16 23:08:48,541 [printer.py:reinit()] - # Extruders: 1
+2023-05-16 23:08:48,542 [printer.py:reinit()] - # Temperature devices: 3
+2023-05-16 23:08:48,542 [printer.py:reinit()] - # Fans: 1
+2023-05-16 23:08:48,542 [printer.py:reinit()] - # Output pins: 4
+2023-05-16 23:08:48,543 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-05-16 23:08:48,841 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&extruder&heater_bed&temperature_sensor raspberry_pi&temperature_sensor Caisson&fan&filament_switch_sensor Fusible_Thermique&output_pin relay_1&output_pin relay_2&output_pin relay_3&output_pin Power_Hypercube
+2023-05-16 23:08:48,860 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-16 23:08:48,881 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-16 23:08:48,893 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-16 23:08:48,894 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-16 23:08:48,895 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-05-16 23:08:48,895 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-05-16 23:08:48,896 [screen.py:init_printer()] - Printer initialized
+2023-05-16 23:08:51,286 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-16 23:08:51,316 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-16 23:08:51,334 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-16 23:08:51,336 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-16 23:24:26,098 [KlippyWebsocket.py:on_close()] - Server Shutdown
+2023-05-16 23:24:26,098 [KlippyWebsocket.py:on_close()] - Moonraker Websocket Closed
+2023-05-16 23:24:26,104 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-16 23:24:26,108 [screen.py:connect_printer()] - Connecting to printer: Printer
+2023-05-16 23:24:26,114 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-16 23:24:26,131 [KlippyRest.py:send_request()] - host=127.0.0.1, port=7125>>Max retries exceeded with url>>Failed to establish a new connection>>[Errno 111] Connection refused
+2023-05-16 23:24:36,266 [KlippyWebsocket.py:reconnect()] - Attempting to reconnect
+2023-05-16 23:24:36,286 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-16 23:24:36,302 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/access/oneshot_token
+2023-05-16 23:24:36,304 [KlippyWebsocket.py:connect()] - Starting websocket thread
+2023-05-16 23:24:36,315 [_logging.py:info()] - Websocket connected
+2023-05-16 23:24:36,316 [KlippyWebsocket.py:on_open()] - Moonraker Websocket Open
+2023-05-16 23:24:36,332 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-16 23:24:36,353 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-16 23:24:36,365 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-05-16 23:24:36,481 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-05-16 23:24:36,484 [printer.py:reinit()] - Klipper version: v0.11.0-200-g7511151a
+2023-05-16 23:24:36,484 [printer.py:reinit()] - # Extruders: 1
+2023-05-16 23:24:36,484 [printer.py:reinit()] - # Temperature devices: 3
+2023-05-16 23:24:36,484 [printer.py:reinit()] - # Fans: 1
+2023-05-16 23:24:36,484 [printer.py:reinit()] - # Output pins: 4
+2023-05-16 23:24:36,485 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-05-16 23:24:36,772 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&extruder&heater_bed&temperature_sensor raspberry_pi&temperature_sensor Caisson&fan&filament_switch_sensor Fusible_Thermique&output_pin relay_1&output_pin relay_2&output_pin relay_3&output_pin Power_Hypercube
+2023-05-16 23:24:36,798 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-16 23:24:36,814 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-16 23:24:36,837 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-16 23:24:36,838 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-16 23:24:36,839 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-05-16 23:24:36,839 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-05-16 23:24:36,839 [screen.py:init_printer()] - Printer initialized
+2023-05-16 23:24:39,272 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-16 23:24:39,285 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-16 23:24:39,295 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-16 23:24:39,296 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-16 23:25:15,620 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2023-05-16 23:25:15,620 [printer.py:change_state()] - Adding callback for state: disconnected
+2023-05-16 23:25:15,626 [screen.py:state_disconnected()] - ### Going to disconnected
+2023-05-16 23:25:15,641 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-16 23:25:15,667 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-16 23:25:15,686 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-16 23:25:15,689 [screen.py:init_printer()] - Klipper not connected
+2023-05-16 23:25:19,272 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-16 23:25:19,281 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-16 23:25:19,291 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-05-16 23:25:19,310 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-05-16 23:25:19,314 [printer.py:reinit()] - Klipper version: v0.11.0-200-g7511151a
+2023-05-16 23:25:19,314 [printer.py:reinit()] - # Extruders: 1
+2023-05-16 23:25:19,314 [printer.py:reinit()] - # Temperature devices: 3
+2023-05-16 23:25:19,314 [printer.py:reinit()] - # Fans: 1
+2023-05-16 23:25:19,314 [printer.py:reinit()] - # Output pins: 4
+2023-05-16 23:25:19,315 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-05-16 23:25:19,568 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&extruder&heater_bed&temperature_sensor raspberry_pi&temperature_sensor Caisson&fan&filament_switch_sensor Fusible_Thermique&output_pin relay_1&output_pin relay_2&output_pin relay_3&output_pin Power_Hypercube
+2023-05-16 23:25:19,576 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2023-05-16 23:25:19,576 [printer.py:change_state()] - Adding callback for state: startup
+2023-05-16 23:25:19,603 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-16 23:25:19,617 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-16 23:25:19,628 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-16 23:25:19,629 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-16 23:25:19,631 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-05-16 23:25:19,631 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-05-16 23:25:19,632 [screen.py:init_printer()] - Printer initialized
+2023-05-16 23:25:22,114 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2023-05-16 23:25:22,114 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-16 23:25:22,118 [main_menu.py:initialize()] - ### Making MainMenu
+2023-05-16 23:25:22,174 [main_menu.py:add_device()] - Adding device: extruder
+2023-05-16 23:25:22,181 [main_menu.py:add_device()] - Adding device: heater_bed
+2023-05-16 23:25:22,188 [main_menu.py:add_device()] - Adding device: temperature_sensor raspberry_pi
+2023-05-16 23:25:22,194 [main_menu.py:add_device()] - Adding device: temperature_sensor Caisson
+2023-05-16 23:25:22,200 [screen.py:attach_panel()] - Current panel hierarchy: main_panel
+2023-05-16 23:25:22,303 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-16 23:25:22,321 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-16 23:25:22,332 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-16 23:25:22,333 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-16 23:33:20,993 [KlippyGtk.py:Dialog()] - Showing dialog <Gtk.Dialog object at 0x7f89003f80 (GtkDialog at 0x27b58320)>
+2023-05-16 23:36:30,689 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2023-05-16 23:36:30,690 [printer.py:change_state()] - Adding callback for state: disconnected
+2023-05-16 23:36:30,690 [screen.py:state_disconnected()] - ### Going to disconnected
+2023-05-16 23:36:30,693 [KlippyGtk.py:remove_dialog()] - Removing Dialog
+2023-05-16 23:36:30,696 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-16 23:36:30,709 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-16 23:36:30,720 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-16 23:36:30,721 [screen.py:init_printer()] - Klipper not connected
+2023-05-16 23:36:34,279 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-16 23:36:34,301 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-16 23:36:34,319 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-05-16 23:36:34,344 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-05-16 23:36:34,348 [printer.py:reinit()] - Klipper version: v0.11.0-200-g7511151a
+2023-05-16 23:36:34,348 [printer.py:reinit()] - # Extruders: 1
+2023-05-16 23:36:34,348 [printer.py:reinit()] - # Temperature devices: 3
+2023-05-16 23:36:34,348 [printer.py:reinit()] - # Fans: 1
+2023-05-16 23:36:34,348 [printer.py:reinit()] - # Output pins: 4
+2023-05-16 23:36:34,349 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-05-16 23:36:34,631 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&extruder&heater_bed&temperature_sensor raspberry_pi&temperature_sensor Caisson&fan&filament_switch_sensor Fusible_Thermique&output_pin relay_1&output_pin relay_2&output_pin relay_3&output_pin Power_Hypercube
+2023-05-16 23:36:34,636 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2023-05-16 23:36:34,636 [printer.py:change_state()] - Adding callback for state: startup
+2023-05-16 23:36:34,664 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-16 23:36:34,677 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-16 23:36:34,693 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-16 23:36:34,695 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-16 23:36:34,696 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-05-16 23:36:34,697 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-05-16 23:36:34,698 [screen.py:init_printer()] - Printer initialized
+2023-05-16 23:36:37,278 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-16 23:36:37,289 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-16 23:36:37,300 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-16 23:36:37,301 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-16 23:36:37,527 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2023-05-16 23:36:37,527 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-16 23:36:37,530 [main_menu.py:initialize()] - ### Making MainMenu
+2023-05-16 23:36:37,587 [main_menu.py:add_device()] - Adding device: extruder
+2023-05-16 23:36:37,593 [main_menu.py:add_device()] - Adding device: heater_bed
+2023-05-16 23:36:37,598 [main_menu.py:add_device()] - Adding device: temperature_sensor raspberry_pi
+2023-05-16 23:36:37,603 [main_menu.py:add_device()] - Adding device: temperature_sensor Caisson
+2023-05-16 23:36:37,608 [screen.py:attach_panel()] - Current panel hierarchy: main_panel
+2023-05-16 23:42:16,116 [KlippyGtk.py:remove_dialog()] - Cannot remove dialog <Gtk.Dialog object at 0x7f89003f80 (GtkDialog at 0x27b58320)>
+2023-05-16 23:42:16,151 [KlippyGtk.py:Dialog()] - Showing dialog <Gtk.Dialog object at 0x7f8876ecc0 (GtkDialog at 0x27d87910)>
+2023-05-16 23:43:14,681 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2023-05-16 23:43:14,681 [printer.py:change_state()] - Adding callback for state: disconnected
+2023-05-16 23:43:14,682 [screen.py:state_disconnected()] - ### Going to disconnected
+2023-05-16 23:43:14,684 [KlippyGtk.py:remove_dialog()] - Removing Dialog
+2023-05-16 23:43:14,688 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-16 23:43:14,701 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-16 23:43:14,712 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-16 23:43:14,712 [screen.py:init_printer()] - Klipper not connected
+2023-05-16 23:43:18,272 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-16 23:43:18,282 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-16 23:43:18,292 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-05-16 23:43:18,312 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-05-16 23:43:18,316 [printer.py:reinit()] - Klipper version: v0.11.0-200-g7511151a
+2023-05-16 23:43:18,316 [printer.py:reinit()] - # Extruders: 1
+2023-05-16 23:43:18,317 [printer.py:reinit()] - # Temperature devices: 3
+2023-05-16 23:43:18,317 [printer.py:reinit()] - # Fans: 1
+2023-05-16 23:43:18,317 [printer.py:reinit()] - # Output pins: 4
+2023-05-16 23:43:18,317 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-05-16 23:43:18,590 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&extruder&heater_bed&temperature_sensor raspberry_pi&temperature_sensor Caisson&fan&filament_switch_sensor Fusible_Thermique&output_pin relay_1&output_pin relay_2&output_pin relay_3&output_pin Power_Hypercube
+2023-05-16 23:43:18,593 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2023-05-16 23:43:18,593 [printer.py:change_state()] - Adding callback for state: startup
+2023-05-16 23:43:18,613 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-16 23:43:18,618 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-16 23:43:18,629 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-16 23:43:18,630 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-16 23:43:18,631 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-05-16 23:43:18,631 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-05-16 23:43:18,631 [screen.py:init_printer()] - Printer initialized
+2023-05-16 23:43:21,174 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2023-05-16 23:43:21,174 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-16 23:43:21,177 [main_menu.py:initialize()] - ### Making MainMenu
+2023-05-16 23:43:21,263 [main_menu.py:add_device()] - Adding device: extruder
+2023-05-16 23:43:21,271 [main_menu.py:add_device()] - Adding device: heater_bed
+2023-05-16 23:43:21,279 [main_menu.py:add_device()] - Adding device: temperature_sensor raspberry_pi
+2023-05-16 23:43:21,285 [main_menu.py:add_device()] - Adding device: temperature_sensor Caisson
+2023-05-16 23:43:21,292 [screen.py:attach_panel()] - Current panel hierarchy: main_panel
+2023-05-16 23:43:21,358 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-16 23:43:21,363 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-16 23:43:21,377 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-16 23:43:21,378 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-16 23:45:32,766 [screen.py:_go_to_submenu()] - #### Go to submenu homing
+2023-05-16 23:45:32,767 [screen.py:_go_to_submenu()] - #### Menu __main
+2023-05-16 23:45:32,774 [screen.py:_load_panel()] - Loading panel: menu
+2023-05-16 23:45:32,774 [screen.py:_load_panel()] - Panel path: /home/pi/KlipperScreen/panels/menu.py
+2023-05-16 23:45:32,796 [menu.py:initialize()] - X > homing quad_gantry_level
+2023-05-16 23:45:32,800 [menu.py:initialize()] - X > homing Z-Tilt
+2023-05-16 23:45:32,887 [screen.py:attach_panel()] - Current panel hierarchy: main_panel > homing
+2023-05-16 23:45:35,079 [screen.py:_send_action()] - printer.gcode.script: {'script': 'G28'}
+2023-05-16 23:46:01,390 [screen.py:_send_action()] - printer.gcode.script: {'script': 'G28 Y'}
+2023-05-16 23:46:14,985 [screen.py:_send_action()] - printer.gcode.script: {'script': 'G28'}
+2023-05-16 23:47:08,527 [screen.py:_send_action()] - printer.gcode.script: {'script': 'G28'}
+2023-05-16 23:47:55,369 [screen.py:_send_action()] - printer.gcode.script: {'script': 'G28'}
+2023-05-16 23:48:33,923 [KlippyGtk.py:remove_dialog()] - Cannot remove dialog <Gtk.Dialog object at 0x7f8876ecc0 (GtkDialog at 0x27d87910)>
+2023-05-16 23:48:33,941 [KlippyGtk.py:Dialog()] - Showing dialog <Gtk.Dialog object at 0x7f88ffb700 (GtkDialog at 0x27e5b6f0)>
+2023-05-17 00:13:30,726 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2023-05-17 00:13:30,726 [printer.py:change_state()] - Adding callback for state: disconnected
+2023-05-17 00:13:30,726 [screen.py:state_disconnected()] - ### Going to disconnected
+2023-05-17 00:13:30,730 [KlippyGtk.py:remove_dialog()] - Removing Dialog
+2023-05-17 00:13:30,736 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-17 00:13:30,748 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-17 00:13:30,759 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-17 00:13:30,761 [screen.py:init_printer()] - Klipper not connected
+2023-05-17 00:13:34,274 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-17 00:13:34,285 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-17 00:13:34,295 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-05-17 00:13:34,313 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-05-17 00:13:34,317 [printer.py:reinit()] - Klipper version: v0.11.0-200-g7511151a
+2023-05-17 00:13:34,317 [printer.py:reinit()] - # Extruders: 1
+2023-05-17 00:13:34,317 [printer.py:reinit()] - # Temperature devices: 3
+2023-05-17 00:13:34,317 [printer.py:reinit()] - # Fans: 1
+2023-05-17 00:13:34,317 [printer.py:reinit()] - # Output pins: 4
+2023-05-17 00:13:34,318 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-05-17 00:13:34,593 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&extruder&heater_bed&temperature_sensor raspberry_pi&temperature_sensor Caisson&fan&filament_switch_sensor Fusible_Thermique&output_pin relay_1&output_pin relay_2&output_pin relay_3&output_pin Power_Hypercube
+2023-05-17 00:13:34,596 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2023-05-17 00:13:34,596 [printer.py:change_state()] - Adding callback for state: startup
+2023-05-17 00:13:34,615 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-17 00:13:34,618 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-17 00:13:34,628 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-17 00:13:34,629 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-17 00:13:34,630 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-05-17 00:13:34,631 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-05-17 00:13:34,631 [screen.py:init_printer()] - Printer initialized
+2023-05-17 00:13:37,315 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-17 00:13:37,321 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-17 00:13:37,336 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-17 00:13:37,337 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-17 00:13:58,102 [printer.py:change_state()] - Changing state from 'startup' to 'disconnected'
+2023-05-17 00:13:58,102 [printer.py:change_state()] - Adding callback for state: disconnected
+2023-05-17 00:13:58,102 [screen.py:state_disconnected()] - ### Going to disconnected
+2023-05-17 00:13:58,108 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-17 00:13:58,119 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-17 00:13:58,128 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-17 00:13:58,129 [screen.py:init_printer()] - Klipper not connected
+2023-05-17 00:14:01,272 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-17 00:14:01,282 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-17 00:14:01,292 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-05-17 00:14:01,308 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-05-17 00:14:01,312 [printer.py:reinit()] - Klipper version: v0.11.0-200-g7511151a
+2023-05-17 00:14:01,312 [printer.py:reinit()] - # Extruders: 1
+2023-05-17 00:14:01,312 [printer.py:reinit()] - # Temperature devices: 3
+2023-05-17 00:14:01,312 [printer.py:reinit()] - # Fans: 1
+2023-05-17 00:14:01,312 [printer.py:reinit()] - # Output pins: 4
+2023-05-17 00:14:01,313 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-05-17 00:14:01,585 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&extruder&heater_bed&temperature_sensor raspberry_pi&temperature_sensor Caisson&fan&filament_switch_sensor Fusible_Thermique&output_pin relay_1&output_pin relay_2&output_pin relay_3&output_pin Power_Hypercube
+2023-05-17 00:14:01,588 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2023-05-17 00:14:01,588 [printer.py:change_state()] - Adding callback for state: startup
+2023-05-17 00:14:01,608 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-17 00:14:01,612 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-17 00:14:01,622 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-17 00:14:01,623 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-17 00:14:01,624 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-05-17 00:14:01,624 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-05-17 00:14:01,625 [screen.py:init_printer()] - Printer initialized
+2023-05-17 00:14:03,835 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2023-05-17 00:14:03,835 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-17 00:14:03,841 [main_menu.py:initialize()] - ### Making MainMenu
+2023-05-17 00:14:03,915 [main_menu.py:add_device()] - Adding device: extruder
+2023-05-17 00:14:03,920 [main_menu.py:add_device()] - Adding device: heater_bed
+2023-05-17 00:14:03,926 [main_menu.py:add_device()] - Adding device: temperature_sensor raspberry_pi
+2023-05-17 00:14:03,931 [main_menu.py:add_device()] - Adding device: temperature_sensor Caisson
+2023-05-17 00:14:03,937 [screen.py:attach_panel()] - Current panel hierarchy: main_panel
+2023-05-17 00:14:04,282 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-17 00:14:04,287 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-17 00:14:04,297 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-17 00:14:04,298 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-17 00:14:13,919 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2023-05-17 00:14:13,919 [printer.py:change_state()] - Adding callback for state: printing
+2023-05-17 00:14:13,935 [screen.py:_load_panel()] - Loading panel: job_status
+2023-05-17 00:14:13,935 [screen.py:_load_panel()] - Panel path: /home/pi/KlipperScreen/panels/job_status.py
+2023-05-17 00:14:14,091 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2023-05-17 00:14:14,092 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2023-05-17 00:14:14,104 [job_status.py:activate()] - Changing filename: 'None' to '0036 - SUPPORT LED0-25.gcode'
+2023-05-17 00:14:14,105 [job_status.py:update_file_metadata()] - Update Metadata. File: 0036 - SUPPORT LED0-25.gcode Size: 15175678
+2023-05-17 00:14:14,106 [job_status.py:show_file_thumbnail()] - 0036 - SUPPORT LED0-25.gcode
+2023-05-17 00:14:14,106 [job_status.py:show_file_thumbnail()] - no pixbuf
+2023-05-17 00:47:56,262 [screen.py:show_screensaver()] - Showing Screensaver
+2023-05-17 01:15:26,921 [screen.py:close_screensaver()] - Closing Screensaver
+2023-05-17 01:15:26,934 [screen.py:wake_screen()] - Screen wake up
+2023-05-17 02:15:27,263 [screen.py:show_screensaver()] - Showing Screensaver
+2023-05-17 04:53:56,367 [screen.py:close_screensaver()] - Closing Screensaver
+2023-05-17 04:53:56,397 [screen.py:wake_screen()] - Screen wake up
+2023-05-17 04:53:56,626 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'complete'
+2023-05-17 04:53:56,627 [printer.py:get_probe()] - Probe type: bltouch
+2023-05-17 04:53:59,105 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2023-05-17 04:53:59,105 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-17 05:53:57,264 [screen.py:show_screensaver()] - Showing Screensaver
+2023-05-17 09:02:00,977 [screen.py:close_screensaver()] - Closing Screensaver
+2023-05-17 09:02:01,000 [screen.py:wake_screen()] - Screen wake up
+2023-05-17 09:03:30,014 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2023-05-17 09:03:30,014 [printer.py:change_state()] - Adding callback for state: printing
+2023-05-17 09:03:30,015 [job_status.py:set_state()] - Changing job_status state from 'complete' to 'printing'
+2023-05-17 09:03:30,022 [job_status.py:update_file_metadata()] - Update Metadata. File: 0036 - SUPPORT LED 10 led--25.gcode Size: 5381065
+2023-05-17 09:03:30,023 [job_status.py:show_file_thumbnail()] - 0036 - SUPPORT LED 10 led--25.gcode
+2023-05-17 09:03:30,023 [job_status.py:show_file_thumbnail()] - no pixbuf
+2023-05-17 10:02:01,264 [screen.py:show_screensaver()] - Showing Screensaver
+2023-05-17 10:36:27,259 [screen.py:close_screensaver()] - Closing Screensaver
+2023-05-17 10:36:27,272 [screen.py:wake_screen()] - Screen wake up
+2023-05-17 11:36:27,283 [screen.py:show_screensaver()] - Showing Screensaver
+2023-05-17 12:06:23,828 [screen.py:close_screensaver()] - Closing Screensaver
+2023-05-17 12:06:23,844 [screen.py:wake_screen()] - Screen wake up
+2023-05-17 12:06:23,957 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'complete'
+2023-05-17 12:06:23,959 [printer.py:get_probe()] - Probe type: bltouch
+2023-05-17 12:06:26,434 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2023-05-17 12:06:26,434 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-17 12:10:45,409 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2023-05-17 12:10:45,409 [printer.py:change_state()] - Adding callback for state: disconnected
+2023-05-17 12:10:45,411 [screen.py:state_disconnected()] - ### Going to disconnected
+2023-05-17 12:10:45,416 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-17 12:10:45,428 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-17 12:10:45,438 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-17 12:10:45,440 [screen.py:init_printer()] - Klipper not connected
+2023-05-17 12:10:48,271 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-17 12:10:48,280 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-17 12:10:48,290 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-05-17 12:10:48,307 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-05-17 12:10:48,312 [printer.py:reinit()] - Klipper version: v0.11.0-200-g7511151a
+2023-05-17 12:10:48,312 [printer.py:reinit()] - # Extruders: 1
+2023-05-17 12:10:48,312 [printer.py:reinit()] - # Temperature devices: 3
+2023-05-17 12:10:48,312 [printer.py:reinit()] - # Fans: 1
+2023-05-17 12:10:48,312 [printer.py:reinit()] - # Output pins: 4
+2023-05-17 12:10:48,313 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-05-17 12:10:48,585 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&extruder&heater_bed&temperature_sensor raspberry_pi&temperature_sensor Caisson&fan&filament_switch_sensor Fusible_Thermique&output_pin relay_1&output_pin relay_2&output_pin relay_3&output_pin Power_Hypercube
+2023-05-17 12:10:48,588 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2023-05-17 12:10:48,588 [printer.py:change_state()] - Adding callback for state: startup
+2023-05-17 12:10:48,610 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-17 12:10:48,615 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-17 12:10:48,624 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-17 12:10:48,625 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-17 12:10:48,626 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-05-17 12:10:48,626 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-05-17 12:10:48,626 [screen.py:init_printer()] - Printer initialized
+2023-05-17 12:10:51,284 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-17 12:10:51,290 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-17 12:10:51,300 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-17 12:10:51,301 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-17 12:10:51,321 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2023-05-17 12:10:51,321 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-17 12:10:51,325 [main_menu.py:initialize()] - ### Making MainMenu
+2023-05-17 12:10:51,383 [main_menu.py:add_device()] - Adding device: extruder
+2023-05-17 12:10:51,388 [main_menu.py:add_device()] - Adding device: heater_bed
+2023-05-17 12:10:51,394 [main_menu.py:add_device()] - Adding device: temperature_sensor raspberry_pi
+2023-05-17 12:10:51,400 [main_menu.py:add_device()] - Adding device: temperature_sensor Caisson
+2023-05-17 12:10:51,406 [screen.py:attach_panel()] - Current panel hierarchy: main_panel
+2023-05-17 12:10:58,860 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2023-05-17 12:10:58,861 [printer.py:change_state()] - Adding callback for state: printing
+2023-05-17 12:10:58,971 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2023-05-17 12:10:58,971 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2023-05-17 12:10:58,981 [job_status.py:activate()] - Changing filename: 'None' to 'piCAM BOITIER.gcode'
+2023-05-17 12:10:58,981 [job_status.py:update_file_metadata()] - Update Metadata. File: piCAM BOITIER.gcode Size: 2850176
+2023-05-17 12:10:58,982 [job_status.py:show_file_thumbnail()] - piCAM BOITIER.gcode
+2023-05-17 12:10:58,982 [job_status.py:show_file_thumbnail()] - no pixbuf
+2023-05-17 13:06:24,262 [screen.py:show_screensaver()] - Showing Screensaver
+2023-05-17 13:46:47,715 [screen.py:close_screensaver()] - Closing Screensaver
+2023-05-17 13:46:47,746 [screen.py:wake_screen()] - Screen wake up
+2023-05-17 13:46:47,986 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'complete'
+2023-05-17 13:46:47,989 [printer.py:get_probe()] - Probe type: bltouch
+2023-05-17 13:46:50,236 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2023-05-17 13:46:50,236 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-17 14:46:48,263 [screen.py:show_screensaver()] - Showing Screensaver
+--------------------KlipperScreen Log Start--------------------
+Git Version: v0.3.2-35-ga77148b
+2023-05-17 16:20:31,795 [screen.py:main()] - KlipperScreen version: v0.3.2-35-ga77148b
+2023-05-17 16:20:32,002 [config.py:get_config_file_location()] - Passed config (-c): /home/pi/KlipperScreen.conf
+2023-05-17 16:20:32,003 [config.py:__init__()] - Config path location: /home/pi/KlipperScreen/ks_includes/defaults.conf
+2023-05-17 16:20:32,021 [config.py:__init__()] - Configuration validated succesfuly
+2023-05-17 16:20:32,022 [config.py:__init__()] - Configured printers: [
+  {
+    "Printer": {
+      "moonraker_host": "127.0.0.1",
+      "moonraker_port": "7125",
+      "moonraker_api_key": ""
+    }
+  }
+]
+2023-05-17 16:20:32,152 [config.py:create_translations()] - Selected lang: None OS lang: en_GB
+2023-05-17 16:20:32,152 [config.py:install_language()] - Using system lang
+2023-05-17 16:20:32,154 [config.py:install_language()] - Using lang en
+2023-05-17 16:20:32,166 [screen.py:__init__()] - Screen resolution: 800x480
+2023-05-17 16:20:32,168 [KlippyGtk.py:__init__()] - Font size: 16.6 (medium)
+2023-05-17 16:20:33,185 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2023-05-17 16:20:33,198 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2023-05-17 16:20:33,217 [screen.py:initial_connection()] - Default printer: None
+2023-05-17 16:20:33,217 [screen.py:connect_printer()] - Connecting to printer: Printer
+2023-05-17 16:20:33,218 [screen.py:_load_panel()] - Loading panel: splash_screen
+2023-05-17 16:20:33,218 [screen.py:_load_panel()] - Panel path: /home/pi/KlipperScreen/panels/splash_screen.py
+2023-05-17 16:20:33,294 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-17 16:20:33,329 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-17 16:20:33,348 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/access/oneshot_token
+2023-05-17 16:20:33,351 [KlippyWebsocket.py:connect()] - Starting websocket thread
+2023-05-17 16:20:33,364 [_logging.py:info()] - Websocket connected
+2023-05-17 16:20:33,364 [KlippyWebsocket.py:on_open()] - Moonraker Websocket Open
+2023-05-17 16:20:33,389 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-17 16:20:33,425 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-17 16:20:33,441 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-05-17 16:20:33,586 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-05-17 16:20:33,591 [printer.py:reinit()] - Klipper version: v0.11.0-200-g7511151a-dirty
+2023-05-17 16:20:33,592 [printer.py:reinit()] - # Extruders: 1
+2023-05-17 16:20:33,592 [printer.py:reinit()] - # Temperature devices: 3
+2023-05-17 16:20:33,592 [printer.py:reinit()] - # Fans: 1
+2023-05-17 16:20:33,592 [printer.py:reinit()] - # Output pins: 4
+2023-05-17 16:20:33,592 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-05-17 16:20:33,874 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&extruder&heater_bed&temperature_sensor raspberry_pi&temperature_sensor Caisson&fan&filament_switch_sensor Fusible_Thermique&output_pin relay_1&output_pin relay_2&output_pin relay_3&output_pin Power_Hypercube
+2023-05-17 16:20:33,879 [printer.py:change_state()] - Changing state from 'disconnected' to 'ready'
+2023-05-17 16:20:33,879 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-17 16:20:33,900 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-17 16:20:33,916 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-17 16:20:33,929 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-17 16:20:33,930 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-17 16:20:33,931 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-05-17 16:20:33,931 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-05-17 16:20:33,932 [screen.py:init_printer()] - Printer initialized
+2023-05-17 16:20:34,006 [screen.py:_load_panel()] - Loading panel: main_menu
+2023-05-17 16:20:34,007 [screen.py:_load_panel()] - Panel path: /home/pi/KlipperScreen/panels/main_menu.py
+2023-05-17 16:20:34,028 [main_menu.py:initialize()] - ### Making MainMenu
+2023-05-17 16:20:34,119 [main_menu.py:add_device()] - Adding device: extruder
+2023-05-17 16:20:34,130 [main_menu.py:add_device()] - Adding device: heater_bed
+2023-05-17 16:20:34,140 [main_menu.py:add_device()] - Adding device: temperature_sensor raspberry_pi
+2023-05-17 16:20:34,148 [main_menu.py:add_device()] - Adding device: temperature_sensor Caisson
+2023-05-17 16:20:34,156 [screen.py:attach_panel()] - Current panel hierarchy: main_panel
+2023-05-17 16:20:36,555 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-17 16:20:36,571 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-17 16:20:36,593 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-17 16:20:36,596 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-17 16:39:24,600 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2023-05-17 16:39:24,600 [printer.py:change_state()] - Adding callback for state: printing
+2023-05-17 16:39:24,621 [screen.py:_load_panel()] - Loading panel: job_status
+2023-05-17 16:39:24,621 [screen.py:_load_panel()] - Panel path: /home/pi/KlipperScreen/panels/job_status.py
+2023-05-17 16:39:24,750 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2023-05-17 16:39:24,750 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2023-05-17 16:39:24,761 [job_status.py:activate()] - Changing filename: 'None' to '3030_Profile_Cable_Ties_v4.gcode'
+2023-05-17 16:39:24,762 [job_status.py:update_file_metadata()] - Update Metadata. File: 3030_Profile_Cable_Ties_v4.gcode Size: 1831911
+2023-05-17 16:39:24,763 [job_status.py:show_file_thumbnail()] - 3030_Profile_Cable_Ties_v4.gcode
+2023-05-17 16:39:24,763 [job_status.py:show_file_thumbnail()] - no pixbuf
+2023-05-17 17:20:47,121 [screen.py:show_screensaver()] - Showing Screensaver
+2023-05-17 17:43:07,793 [screen.py:close_screensaver()] - Closing Screensaver
+2023-05-17 17:43:07,809 [screen.py:wake_screen()] - Screen wake up
+2023-05-17 17:43:08,054 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'complete'
+2023-05-17 17:43:10,304 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2023-05-17 17:43:10,305 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-17 18:43:08,122 [screen.py:show_screensaver()] - Showing Screensaver
+2023-05-17 23:32:14,500 [screen.py:close_screensaver()] - Closing Screensaver
+2023-05-17 23:32:14,519 [screen.py:wake_screen()] - Screen wake up
+2023-05-17 23:32:14,728 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2023-05-17 23:32:14,728 [printer.py:change_state()] - Adding callback for state: printing
+2023-05-17 23:32:14,730 [job_status.py:set_state()] - Changing job_status state from 'complete' to 'printing'
+2023-05-17 23:32:14,739 [job_status.py:update_file_metadata()] - Update Metadata. File: cam equerree.gcode Size: 7181260
+2023-05-17 23:32:14,739 [job_status.py:show_file_thumbnail()] - cam equerree.gcode
+2023-05-17 23:32:14,740 [job_status.py:show_file_thumbnail()] - no pixbuf
+2023-05-17 23:41:41,590 [printer.py:change_state()] - Changing state from 'printing' to 'paused'
+2023-05-17 23:41:41,590 [printer.py:change_state()] - Adding callback for state: paused
+2023-05-17 23:41:41,597 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'paused'
+2023-05-17 23:42:14,944 [printer.py:change_state()] - Changing state from 'paused' to 'ready'
+2023-05-17 23:42:14,944 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-17 23:42:14,956 [job_status.py:set_state()] - Changing job_status state from 'paused' to 'cancelled'
+2023-05-17 23:42:14,959 [printer.py:get_probe()] - Probe type: bltouch
+--------------------KlipperScreen Log Start--------------------
+Git Version: v0.3.2-35-ga77148b
+2023-05-17 23:42:50,258 [screen.py:main()] - KlipperScreen version: v0.3.2-35-ga77148b
+2023-05-17 23:42:50,444 [config.py:get_config_file_location()] - Passed config (-c): /home/pi/KlipperScreen.conf
+2023-05-17 23:42:50,445 [config.py:__init__()] - Config path location: /home/pi/KlipperScreen/ks_includes/defaults.conf
+2023-05-17 23:42:50,468 [config.py:__init__()] - Configuration validated succesfuly
+2023-05-17 23:42:50,469 [config.py:__init__()] - Configured printers: [
+  {
+    "Printer": {
+      "moonraker_host": "127.0.0.1",
+      "moonraker_port": "7125",
+      "moonraker_api_key": ""
+    }
+  }
+]
+2023-05-17 23:42:50,570 [config.py:create_translations()] - Selected lang: None OS lang: en_GB
+2023-05-17 23:42:50,570 [config.py:install_language()] - Using system lang
+2023-05-17 23:42:50,572 [config.py:install_language()] - Using lang en
+2023-05-17 23:42:50,584 [screen.py:__init__()] - Screen resolution: 800x480
+2023-05-17 23:42:50,586 [KlippyGtk.py:__init__()] - Font size: 16.6 (medium)
+2023-05-17 23:42:51,562 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2023-05-17 23:42:51,572 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2023-05-17 23:42:51,590 [screen.py:initial_connection()] - Default printer: None
+2023-05-17 23:42:51,590 [screen.py:connect_printer()] - Connecting to printer: Printer
+2023-05-17 23:42:51,591 [screen.py:_load_panel()] - Loading panel: splash_screen
+2023-05-17 23:42:51,591 [screen.py:_load_panel()] - Panel path: /home/pi/KlipperScreen/panels/splash_screen.py
+2023-05-17 23:42:51,650 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-17 23:42:51,686 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-17 23:42:51,701 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/access/oneshot_token
+2023-05-17 23:42:51,704 [KlippyWebsocket.py:connect()] - Starting websocket thread
+2023-05-17 23:42:51,715 [_logging.py:info()] - Websocket connected
+2023-05-17 23:42:51,715 [KlippyWebsocket.py:on_open()] - Moonraker Websocket Open
+2023-05-17 23:42:51,818 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-17 23:42:51,861 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-17 23:42:51,875 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-05-17 23:42:51,930 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-05-17 23:42:51,935 [printer.py:reinit()] - Klipper version: v0.11.0-200-g7511151a-dirty
+2023-05-17 23:42:51,935 [printer.py:reinit()] - # Extruders: 1
+2023-05-17 23:42:51,936 [printer.py:reinit()] - # Temperature devices: 3
+2023-05-17 23:42:51,936 [printer.py:reinit()] - # Fans: 1
+2023-05-17 23:42:51,936 [printer.py:reinit()] - # Output pins: 4
+2023-05-17 23:42:51,936 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-05-17 23:42:52,211 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&extruder&heater_bed&temperature_sensor raspberry_pi&temperature_sensor Caisson&fan&filament_switch_sensor Fusible_Thermique&output_pin relay_1&output_pin relay_2&output_pin relay_3&output_pin Power_Hypercube
+2023-05-17 23:42:52,214 [printer.py:change_state()] - Changing state from 'disconnected' to 'ready'
+2023-05-17 23:42:52,214 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-17 23:42:52,227 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-17 23:42:52,242 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-17 23:42:52,256 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-17 23:42:52,258 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-17 23:42:52,258 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-05-17 23:42:52,259 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-05-17 23:42:52,259 [screen.py:init_printer()] - Printer initialized
+2023-05-17 23:42:52,266 [screen.py:_load_panel()] - Loading panel: main_menu
+2023-05-17 23:42:52,266 [screen.py:_load_panel()] - Panel path: /home/pi/KlipperScreen/panels/main_menu.py
+2023-05-17 23:42:52,282 [main_menu.py:initialize()] - ### Making MainMenu
+2023-05-17 23:42:52,355 [main_menu.py:add_device()] - Adding device: extruder
+2023-05-17 23:42:52,364 [main_menu.py:add_device()] - Adding device: heater_bed
+2023-05-17 23:42:52,372 [main_menu.py:add_device()] - Adding device: temperature_sensor raspberry_pi
+2023-05-17 23:42:52,378 [main_menu.py:add_device()] - Adding device: temperature_sensor Caisson
+2023-05-17 23:42:52,388 [screen.py:attach_panel()] - Current panel hierarchy: main_panel
+2023-05-17 23:42:54,528 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-17 23:42:54,545 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-17 23:42:54,559 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-17 23:42:54,562 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-17 23:47:26,143 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2023-05-17 23:47:26,143 [printer.py:change_state()] - Adding callback for state: printing
+2023-05-17 23:47:26,162 [screen.py:_load_panel()] - Loading panel: job_status
+2023-05-17 23:47:26,162 [screen.py:_load_panel()] - Panel path: /home/pi/KlipperScreen/panels/job_status.py
+2023-05-17 23:47:26,284 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2023-05-17 23:47:26,285 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2023-05-17 23:47:26,296 [job_status.py:activate()] - Changing filename: 'None' to '3030_Profile_Cable_Ties_v2 ET MOLETTE.gcode'
+2023-05-17 23:47:26,297 [job_status.py:update_file_metadata()] - Update Metadata. File: 3030_Profile_Cable_Ties_v2 ET MOLETTE.gcode Size: 7348994
+2023-05-17 23:47:26,297 [job_status.py:show_file_thumbnail()] - 3030_Profile_Cable_Ties_v2 ET MOLETTE.gcode
+2023-05-17 23:47:26,297 [job_status.py:show_file_thumbnail()] - no pixbuf
+2023-05-17 23:48:15,327 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'cancelled'
+2023-05-17 23:48:16,025 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2023-05-17 23:48:16,026 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-17 23:49:23,478 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2023-05-17 23:49:23,478 [printer.py:change_state()] - Adding callback for state: printing
+2023-05-17 23:49:23,489 [job_status.py:set_state()] - Changing job_status state from 'cancelled' to 'printing'
+2023-05-17 23:49:23,494 [job_status.py:update_file_metadata()] - Update Metadata. File: 3030_Profile_Cable_Ties_v2 ET MOLETTE.gcode Size: 7348994
+2023-05-17 23:49:23,496 [job_status.py:show_file_thumbnail()] - 3030_Profile_Cable_Ties_v2 ET MOLETTE.gcode
+2023-05-17 23:49:23,496 [job_status.py:show_file_thumbnail()] - no pixbuf
+2023-05-18 00:43:06,018 [screen.py:show_screensaver()] - Showing Screensaver
+2023-05-18 02:42:15,440 [screen.py:close_screensaver()] - Closing Screensaver
+2023-05-18 02:42:15,454 [screen.py:wake_screen()] - Screen wake up
+2023-05-18 02:42:15,729 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'complete'
+2023-05-18 02:42:17,957 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2023-05-18 02:42:17,957 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-18 03:42:16,005 [screen.py:show_screensaver()] - Showing Screensaver
+2023-05-18 10:24:55,940 [screen.py:close_screensaver()] - Closing Screensaver
+2023-05-18 10:24:55,954 [screen.py:wake_screen()] - Screen wake up
+2023-05-18 10:24:56,174 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2023-05-18 10:24:56,175 [printer.py:change_state()] - Adding callback for state: printing
+2023-05-18 10:24:56,177 [job_status.py:set_state()] - Changing job_status state from 'complete' to 'printing'
+2023-05-18 10:24:56,181 [job_status.py:update_file_metadata()] - Update Metadata. File: 4X3030_Profile_Cable_Ties_v2.gcode Size: 3403254
+2023-05-18 10:24:56,182 [job_status.py:show_file_thumbnail()] - 4X3030_Profile_Cable_Ties_v2.gcode
+2023-05-18 10:24:56,182 [job_status.py:show_file_thumbnail()] - no pixbuf
+2023-05-18 11:24:56,004 [screen.py:show_screensaver()] - Showing Screensaver
+2023-05-18 12:11:32,850 [screen.py:close_screensaver()] - Closing Screensaver
+2023-05-18 12:11:32,872 [screen.py:wake_screen()] - Screen wake up
+2023-05-18 12:11:33,055 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'complete'
+2023-05-18 12:11:33,057 [printer.py:get_probe()] - Probe type: bltouch
+2023-05-18 12:11:35,492 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2023-05-18 12:11:35,492 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-18 13:11:33,005 [screen.py:show_screensaver()] - Showing Screensaver
+2023-05-18 19:03:12,298 [screen.py:close_screensaver()] - Closing Screensaver
+2023-05-18 19:03:12,317 [screen.py:wake_screen()] - Screen wake up
+2023-05-18 19:03:12,451 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2023-05-18 19:03:12,452 [printer.py:change_state()] - Adding callback for state: printing
+2023-05-18 19:03:12,465 [job_status.py:set_state()] - Changing job_status state from 'complete' to 'printing'
+2023-05-18 19:03:12,471 [job_status.py:update_file_metadata()] - Update Metadata. File: 1X3030_Profile_Cable_Ties_v2.gcode Size: 876637
+2023-05-18 19:03:12,471 [job_status.py:show_file_thumbnail()] - 1X3030_Profile_Cable_Ties_v2.gcode
+2023-05-18 19:03:12,472 [job_status.py:show_file_thumbnail()] - no pixbuf
+2023-05-18 19:32:43,597 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'complete'
+2023-05-18 19:32:46,040 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2023-05-18 19:32:46,041 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-18 20:03:13,002 [screen.py:show_screensaver()] - Showing Screensaver
+2023-05-18 20:24:14,430 [screen.py:close_screensaver()] - Closing Screensaver
+2023-05-18 20:24:14,443 [screen.py:wake_screen()] - Screen wake up
+2023-05-18 20:24:14,537 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2023-05-18 20:24:14,538 [printer.py:change_state()] - Adding callback for state: printing
+2023-05-18 20:24:14,539 [job_status.py:set_state()] - Changing job_status state from 'complete' to 'printing'
+2023-05-18 20:24:14,547 [job_status.py:update_file_metadata()] - Update Metadata. File: Collier - V6.gcode Size: 4530356
+2023-05-18 20:24:14,548 [job_status.py:show_file_thumbnail()] - Collier - V6.gcode
+2023-05-18 20:24:14,548 [job_status.py:show_file_thumbnail()] - no pixbuf
+2023-05-18 21:24:15,002 [screen.py:show_screensaver()] - Showing Screensaver
+2023-05-18 22:03:34,445 [screen.py:close_screensaver()] - Closing Screensaver
+2023-05-18 22:03:34,461 [screen.py:wake_screen()] - Screen wake up
+2023-05-18 22:03:34,560 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'complete'
+2023-05-18 22:03:36,972 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2023-05-18 22:03:36,972 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-18 22:31:17,677 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2023-05-18 22:31:17,678 [printer.py:change_state()] - Adding callback for state: printing
+2023-05-18 22:31:17,678 [job_status.py:set_state()] - Changing job_status state from 'complete' to 'printing'
+2023-05-18 22:31:17,685 [job_status.py:update_file_metadata()] - Update Metadata. File: cam equerree V4.gcode Size: 17519736
+2023-05-18 22:31:17,686 [job_status.py:show_file_thumbnail()] - cam equerree V4.gcode
+2023-05-18 22:31:17,686 [job_status.py:show_file_thumbnail()] - no pixbuf
+2023-05-18 22:36:21,524 [printer.py:change_state()] - Changing state from 'printing' to 'shutdown'
+2023-05-18 22:36:21,525 [printer.py:change_state()] - Adding callback for state: shutdown
+2023-05-18 22:36:21,557 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-18 22:36:22,429 [printer.py:change_state()] - Changing state from 'shutdown' to 'disconnected'
+2023-05-18 22:36:22,429 [printer.py:change_state()] - Adding callback for state: disconnected
+2023-05-18 22:36:22,430 [screen.py:state_disconnected()] - ### Going to disconnected
+2023-05-18 22:36:22,436 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-18 22:36:22,452 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-18 22:36:22,462 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-18 22:36:22,463 [screen.py:init_printer()] - Klipper not connected
+2023-05-18 22:36:26,011 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-18 22:36:26,020 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-18 22:36:26,020 [screen.py:init_printer()] - Klipper not connected
+2023-05-18 22:36:29,011 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-18 22:36:29,020 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-18 22:36:29,030 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-05-18 22:36:29,049 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-05-18 22:36:29,052 [printer.py:reinit()] - Klipper version: v0.11.0-200-g7511151a-dirty
+2023-05-18 22:36:29,052 [printer.py:reinit()] - # Extruders: 1
+2023-05-18 22:36:29,052 [printer.py:reinit()] - # Temperature devices: 3
+2023-05-18 22:36:29,052 [printer.py:reinit()] - # Fans: 1
+2023-05-18 22:36:29,052 [printer.py:reinit()] - # Output pins: 4
+2023-05-18 22:36:29,053 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-05-18 22:36:29,325 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&extruder&heater_bed&temperature_sensor raspberry_pi&temperature_sensor Caisson&fan&filament_switch_sensor Fusible_Thermique&output_pin relay_1&output_pin relay_2&output_pin relay_3&output_pin Power_Hypercube
+2023-05-18 22:36:29,328 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2023-05-18 22:36:29,328 [printer.py:change_state()] - Adding callback for state: startup
+2023-05-18 22:36:29,346 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-18 22:36:29,350 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-18 22:36:29,360 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-18 22:36:29,361 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-18 22:36:29,362 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-05-18 22:36:29,362 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-05-18 22:36:29,363 [screen.py:init_printer()] - Printer initialized
+2023-05-18 22:36:30,294 [printer.py:change_state()] - Changing state from 'startup' to 'error'
+2023-05-18 22:36:30,295 [printer.py:change_state()] - Adding callback for state: error
+2023-05-18 22:36:30,300 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-18 22:36:32,019 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-18 22:36:32,023 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-18 22:36:32,033 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-18 22:36:32,034 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-18 22:36:58,171 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2023-05-18 22:36:58,171 [printer.py:change_state()] - Adding callback for state: disconnected
+2023-05-18 22:36:58,173 [screen.py:state_disconnected()] - ### Going to disconnected
+2023-05-18 22:36:58,178 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-18 22:36:58,190 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-18 22:36:58,200 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-18 22:36:58,200 [screen.py:init_printer()] - Klipper not connected
+2023-05-18 22:37:01,016 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-18 22:37:01,026 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-18 22:37:01,036 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-05-18 22:37:01,053 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-05-18 22:37:01,056 [printer.py:reinit()] - Klipper version: v0.11.0-200-g7511151a-dirty
+2023-05-18 22:37:01,056 [printer.py:reinit()] - # Extruders: 1
+2023-05-18 22:37:01,057 [printer.py:reinit()] - # Temperature devices: 3
+2023-05-18 22:37:01,057 [printer.py:reinit()] - # Fans: 1
+2023-05-18 22:37:01,057 [printer.py:reinit()] - # Output pins: 4
+2023-05-18 22:37:01,057 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-05-18 22:37:01,332 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&extruder&heater_bed&temperature_sensor raspberry_pi&temperature_sensor Caisson&fan&filament_switch_sensor Fusible_Thermique&output_pin relay_1&output_pin relay_2&output_pin relay_3&output_pin Power_Hypercube
+2023-05-18 22:37:01,335 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2023-05-18 22:37:01,335 [printer.py:change_state()] - Adding callback for state: startup
+2023-05-18 22:37:01,354 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-18 22:37:01,359 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-18 22:37:01,369 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-18 22:37:01,370 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-18 22:37:01,371 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-05-18 22:37:01,371 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-05-18 22:37:01,372 [screen.py:init_printer()] - Printer initialized
+2023-05-18 22:37:04,022 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-18 22:37:04,027 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-18 22:37:04,040 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-18 22:37:04,041 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-18 22:37:04,071 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2023-05-18 22:37:04,071 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-18 22:37:04,074 [main_menu.py:initialize()] - ### Making MainMenu
+2023-05-18 22:37:04,149 [main_menu.py:add_device()] - Adding device: extruder
+2023-05-18 22:37:04,154 [main_menu.py:add_device()] - Adding device: heater_bed
+2023-05-18 22:37:04,160 [main_menu.py:add_device()] - Adding device: temperature_sensor raspberry_pi
+2023-05-18 22:37:04,166 [main_menu.py:add_device()] - Adding device: temperature_sensor Caisson
+2023-05-18 22:37:04,173 [screen.py:attach_panel()] - Current panel hierarchy: main_panel
+2023-05-18 22:37:58,931 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2023-05-18 22:37:58,932 [printer.py:change_state()] - Adding callback for state: disconnected
+2023-05-18 22:37:58,933 [screen.py:state_disconnected()] - ### Going to disconnected
+2023-05-18 22:37:58,939 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-18 22:37:58,950 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-18 22:37:58,961 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-18 22:37:58,962 [screen.py:init_printer()] - Klipper not connected
+2023-05-18 22:38:02,013 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-18 22:38:02,025 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-18 22:38:02,035 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-05-18 22:38:02,052 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-05-18 22:38:02,055 [printer.py:reinit()] - Klipper version: v0.11.0-200-g7511151a-dirty
+2023-05-18 22:38:02,056 [printer.py:reinit()] - # Extruders: 1
+2023-05-18 22:38:02,056 [printer.py:reinit()] - # Temperature devices: 3
+2023-05-18 22:38:02,056 [printer.py:reinit()] - # Fans: 1
+2023-05-18 22:38:02,056 [printer.py:reinit()] - # Output pins: 4
+2023-05-18 22:38:02,056 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-05-18 22:38:02,328 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&extruder&heater_bed&temperature_sensor raspberry_pi&temperature_sensor Caisson&fan&filament_switch_sensor Fusible_Thermique&output_pin relay_1&output_pin relay_2&output_pin relay_3&output_pin Power_Hypercube
+2023-05-18 22:38:02,331 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2023-05-18 22:38:02,331 [printer.py:change_state()] - Adding callback for state: startup
+2023-05-18 22:38:02,355 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-18 22:38:02,359 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-18 22:38:02,371 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-18 22:38:02,372 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-18 22:38:02,372 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-05-18 22:38:02,372 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-05-18 22:38:02,373 [screen.py:init_printer()] - Printer initialized
+2023-05-18 22:38:04,816 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2023-05-18 22:38:04,817 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-18 22:38:04,820 [main_menu.py:initialize()] - ### Making MainMenu
+2023-05-18 22:38:04,901 [main_menu.py:add_device()] - Adding device: extruder
+2023-05-18 22:38:04,908 [main_menu.py:add_device()] - Adding device: heater_bed
+2023-05-18 22:38:04,914 [main_menu.py:add_device()] - Adding device: temperature_sensor raspberry_pi
+2023-05-18 22:38:04,921 [main_menu.py:add_device()] - Adding device: temperature_sensor Caisson
+2023-05-18 22:38:04,927 [screen.py:attach_panel()] - Current panel hierarchy: main_panel
+2023-05-18 22:38:05,080 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-18 22:38:05,088 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-18 22:38:05,111 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-18 22:38:05,116 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-18 22:51:51,839 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2023-05-18 22:51:51,839 [printer.py:change_state()] - Adding callback for state: printing
+2023-05-18 22:51:51,955 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2023-05-18 22:51:51,955 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2023-05-18 22:51:51,963 [job_status.py:activate()] - Changing filename: 'None' to 'cam equerree V4.gcode'
+2023-05-18 22:51:51,964 [job_status.py:update_file_metadata()] - Update Metadata. File: cam equerree V4.gcode Size: 17519736
+2023-05-18 22:51:51,964 [job_status.py:show_file_thumbnail()] - cam equerree V4.gcode
+2023-05-18 22:51:51,964 [job_status.py:show_file_thumbnail()] - no pixbuf
+2023-05-18 23:03:35,002 [screen.py:show_screensaver()] - Showing Screensaver
+2023-05-19 03:58:55,262 [screen.py:close_screensaver()] - Closing Screensaver
+2023-05-19 03:58:55,284 [screen.py:wake_screen()] - Screen wake up
+2023-05-19 03:58:55,411 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'complete'
+2023-05-19 03:58:55,412 [printer.py:get_probe()] - Probe type: bltouch
+2023-05-19 03:58:57,904 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2023-05-19 03:58:57,904 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-19 04:58:56,006 [screen.py:show_screensaver()] - Showing Screensaver
+2023-05-19 11:21:17,797 [screen.py:close_screensaver()] - Closing Screensaver
+2023-05-19 11:21:17,815 [screen.py:wake_screen()] - Screen wake up
+2023-05-19 11:24:10,854 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2023-05-19 11:24:10,855 [printer.py:change_state()] - Adding callback for state: printing
+2023-05-19 11:24:10,856 [job_status.py:set_state()] - Changing job_status state from 'complete' to 'printing'
+2023-05-19 11:24:10,862 [job_status.py:update_file_metadata()] - Update Metadata. File: esp32_cam_case_lid.gcode Size: 195290
+2023-05-19 11:24:10,863 [job_status.py:show_file_thumbnail()] - esp32_cam_case_lid.gcode
+2023-05-19 11:24:10,863 [job_status.py:show_file_thumbnail()] - no pixbuf
+2023-05-19 11:47:46,382 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'complete'
+2023-05-19 11:47:46,384 [printer.py:get_probe()] - Probe type: bltouch
+2023-05-19 11:47:48,847 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2023-05-19 11:47:48,847 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-19 12:21:18,003 [screen.py:show_screensaver()] - Showing Screensaver
+--------------------KlipperScreen Log Start--------------------
+Git Version: v0.3.2-35-ga77148b
+2023-05-19 12:33:25,460 [screen.py:main()] - KlipperScreen version: v0.3.2-35-ga77148b
+2023-05-19 12:33:25,671 [config.py:get_config_file_location()] - Passed config (-c): /home/pi/KlipperScreen.conf
+2023-05-19 12:33:25,674 [config.py:__init__()] - Config path location: /home/pi/KlipperScreen/ks_includes/defaults.conf
+2023-05-19 12:33:25,698 [config.py:__init__()] - Configuration validated succesfuly
+2023-05-19 12:33:25,699 [config.py:__init__()] - Configured printers: [
+  {
+    "Printer": {
+      "moonraker_host": "127.0.0.1",
+      "moonraker_port": "7125",
+      "moonraker_api_key": ""
+    }
+  }
+]
+2023-05-19 12:33:25,810 [config.py:create_translations()] - Selected lang: None OS lang: en_GB
+2023-05-19 12:33:25,811 [config.py:install_language()] - Using system lang
+2023-05-19 12:33:25,812 [config.py:install_language()] - Using lang en
+2023-05-19 12:33:25,823 [screen.py:__init__()] - Screen resolution: 800x480
+2023-05-19 12:33:25,824 [KlippyGtk.py:__init__()] - Font size: 16.6 (medium)
+2023-05-19 12:33:26,872 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2023-05-19 12:33:26,884 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2023-05-19 12:33:26,903 [screen.py:initial_connection()] - Default printer: None
+2023-05-19 12:33:26,904 [screen.py:connect_printer()] - Connecting to printer: Printer
+2023-05-19 12:33:26,905 [screen.py:_load_panel()] - Loading panel: splash_screen
+2023-05-19 12:33:26,905 [screen.py:_load_panel()] - Panel path: /home/pi/KlipperScreen/panels/splash_screen.py
+2023-05-19 12:33:26,982 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-19 12:33:27,015 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-19 12:33:27,030 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/access/oneshot_token
+2023-05-19 12:33:27,031 [KlippyWebsocket.py:connect()] - Starting websocket thread
+2023-05-19 12:33:27,045 [_logging.py:info()] - Websocket connected
+2023-05-19 12:33:27,045 [KlippyWebsocket.py:on_open()] - Moonraker Websocket Open
+2023-05-19 12:33:27,148 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-19 12:33:27,177 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-19 12:33:27,190 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-05-19 12:33:27,402 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-05-19 12:33:27,406 [printer.py:reinit()] - Klipper version: v0.11.0-200-g7511151a-dirty
+2023-05-19 12:33:27,406 [printer.py:reinit()] - # Extruders: 1
+2023-05-19 12:33:27,406 [printer.py:reinit()] - # Temperature devices: 3
+2023-05-19 12:33:27,406 [printer.py:reinit()] - # Fans: 1
+2023-05-19 12:33:27,407 [printer.py:reinit()] - # Output pins: 4
+2023-05-19 12:33:27,407 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-05-19 12:33:27,678 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&extruder&heater_bed&temperature_sensor raspberry_pi&temperature_sensor Caisson&fan&filament_switch_sensor Fusible_Thermique&output_pin relay_1&output_pin relay_2&output_pin relay_3&output_pin Power_Hypercube
+2023-05-19 12:33:27,682 [printer.py:change_state()] - Changing state from 'disconnected' to 'ready'
+2023-05-19 12:33:27,682 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-19 12:33:27,707 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-19 12:33:27,722 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-19 12:33:27,738 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-19 12:33:27,740 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-19 12:33:27,742 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-05-19 12:33:27,742 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-05-19 12:33:27,744 [screen.py:init_printer()] - Printer initialized
+2023-05-19 12:33:27,750 [screen.py:_load_panel()] - Loading panel: main_menu
+2023-05-19 12:33:27,750 [screen.py:_load_panel()] - Panel path: /home/pi/KlipperScreen/panels/main_menu.py
+2023-05-19 12:33:27,764 [main_menu.py:initialize()] - ### Making MainMenu
+2023-05-19 12:33:27,837 [main_menu.py:add_device()] - Adding device: extruder
+2023-05-19 12:33:27,848 [main_menu.py:add_device()] - Adding device: heater_bed
+2023-05-19 12:33:27,857 [main_menu.py:add_device()] - Adding device: temperature_sensor raspberry_pi
+2023-05-19 12:33:27,867 [main_menu.py:add_device()] - Adding device: temperature_sensor Caisson
+2023-05-19 12:33:27,878 [screen.py:attach_panel()] - Current panel hierarchy: main_panel
+2023-05-19 12:33:29,545 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-19 12:33:29,561 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-19 12:33:29,577 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-19 12:33:29,580 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-19 12:41:59,885 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2023-05-19 12:41:59,885 [printer.py:change_state()] - Adding callback for state: disconnected
+2023-05-19 12:41:59,887 [screen.py:state_disconnected()] - ### Going to disconnected
+2023-05-19 12:41:59,892 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-19 12:41:59,902 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-19 12:41:59,912 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-19 12:41:59,913 [screen.py:init_printer()] - Klipper not connected
+2023-05-19 12:42:03,610 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-19 12:42:03,626 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-19 12:42:03,641 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-05-19 12:42:03,680 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-05-19 12:42:03,684 [printer.py:reinit()] - Klipper version: v0.11.0-200-g7511151a-dirty
+2023-05-19 12:42:03,684 [printer.py:reinit()] - # Extruders: 1
+2023-05-19 12:42:03,684 [printer.py:reinit()] - # Temperature devices: 3
+2023-05-19 12:42:03,684 [printer.py:reinit()] - # Fans: 1
+2023-05-19 12:42:03,684 [printer.py:reinit()] - # Output pins: 4
+2023-05-19 12:42:03,685 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-05-19 12:42:03,980 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&extruder&heater_bed&temperature_sensor raspberry_pi&temperature_sensor Caisson&fan&filament_switch_sensor Fusible_Thermique&output_pin relay_1&output_pin relay_2&output_pin relay_3&output_pin Power_Hypercube
+2023-05-19 12:42:03,988 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2023-05-19 12:42:03,988 [printer.py:change_state()] - Adding callback for state: startup
+2023-05-19 12:42:04,002 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-19 12:42:04,014 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-19 12:42:04,024 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-19 12:42:04,025 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-19 12:42:04,025 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-05-19 12:42:04,025 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-05-19 12:42:04,030 [screen.py:init_printer()] - Printer initialized
+2023-05-19 12:42:05,685 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2023-05-19 12:42:05,685 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-19 12:42:05,689 [main_menu.py:initialize()] - ### Making MainMenu
+2023-05-19 12:42:05,741 [main_menu.py:add_device()] - Adding device: extruder
+2023-05-19 12:42:05,747 [main_menu.py:add_device()] - Adding device: heater_bed
+2023-05-19 12:42:05,752 [main_menu.py:add_device()] - Adding device: temperature_sensor raspberry_pi
+2023-05-19 12:42:05,757 [main_menu.py:add_device()] - Adding device: temperature_sensor Caisson
+2023-05-19 12:42:05,763 [screen.py:attach_panel()] - Current panel hierarchy: main_panel
+2023-05-19 12:42:06,608 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-19 12:42:06,621 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-19 12:42:06,630 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-19 12:42:06,632 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-19 12:43:11,024 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2023-05-19 12:43:11,025 [printer.py:change_state()] - Adding callback for state: disconnected
+2023-05-19 12:43:11,026 [screen.py:state_disconnected()] - ### Going to disconnected
+2023-05-19 12:43:11,034 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-19 12:43:11,052 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-19 12:43:11,065 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-19 12:43:11,066 [screen.py:init_printer()] - Klipper not connected
+2023-05-19 12:43:14,605 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-19 12:43:14,615 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-19 12:43:14,625 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-05-19 12:43:14,644 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-05-19 12:43:14,647 [printer.py:reinit()] - Klipper version: v0.11.0-200-g7511151a-dirty
+2023-05-19 12:43:14,647 [printer.py:reinit()] - # Extruders: 1
+2023-05-19 12:43:14,647 [printer.py:reinit()] - # Temperature devices: 3
+2023-05-19 12:43:14,647 [printer.py:reinit()] - # Fans: 1
+2023-05-19 12:43:14,647 [printer.py:reinit()] - # Output pins: 4
+2023-05-19 12:43:14,648 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-05-19 12:43:14,921 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&extruder&heater_bed&temperature_sensor raspberry_pi&temperature_sensor Caisson&fan&filament_switch_sensor Fusible_Thermique&output_pin relay_1&output_pin relay_2&output_pin relay_3&output_pin Power_Hypercube
+2023-05-19 12:43:14,923 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2023-05-19 12:43:14,923 [printer.py:change_state()] - Adding callback for state: startup
+2023-05-19 12:43:14,936 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-19 12:43:14,947 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-19 12:43:14,956 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-19 12:43:14,957 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-19 12:43:14,957 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-05-19 12:43:14,957 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-05-19 12:43:14,958 [screen.py:init_printer()] - Printer initialized
+2023-05-19 12:43:16,149 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2023-05-19 12:43:16,150 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-19 12:43:16,152 [main_menu.py:initialize()] - ### Making MainMenu
+2023-05-19 12:43:16,201 [main_menu.py:add_device()] - Adding device: extruder
+2023-05-19 12:43:16,206 [main_menu.py:add_device()] - Adding device: heater_bed
+2023-05-19 12:43:16,211 [main_menu.py:add_device()] - Adding device: temperature_sensor raspberry_pi
+2023-05-19 12:43:16,216 [main_menu.py:add_device()] - Adding device: temperature_sensor Caisson
+2023-05-19 12:43:16,221 [screen.py:attach_panel()] - Current panel hierarchy: main_panel
+2023-05-19 12:43:17,629 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-19 12:43:17,663 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-19 12:43:17,678 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-19 12:43:17,680 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-19 12:43:48,877 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2023-05-19 12:43:48,877 [printer.py:change_state()] - Adding callback for state: disconnected
+2023-05-19 12:43:48,877 [screen.py:state_disconnected()] - ### Going to disconnected
+2023-05-19 12:43:48,883 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-19 12:43:48,898 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-19 12:43:48,910 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-19 12:43:48,910 [screen.py:init_printer()] - Klipper not connected
+2023-05-19 12:43:52,604 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-19 12:43:52,614 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-19 12:43:52,625 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-05-19 12:43:52,708 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-05-19 12:43:52,709 [printer.py:reinit()] - Klipper version: v0.11.0-200-g7511151a-dirty
+2023-05-19 12:43:52,709 [printer.py:reinit()] - # Extruders: 0
+2023-05-19 12:43:52,710 [printer.py:reinit()] - # Temperature devices: 0
+2023-05-19 12:43:52,710 [printer.py:reinit()] - # Fans: 0
+2023-05-19 12:43:52,710 [printer.py:reinit()] - # Output pins: 0
+2023-05-19 12:43:52,710 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-05-19 12:43:52,962 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object
+2023-05-19 12:43:52,965 [printer.py:change_state()] - Changing state from 'disconnected' to 'error'
+2023-05-19 12:43:52,965 [printer.py:change_state()] - Adding callback for state: error
+2023-05-19 12:43:52,981 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-19 12:43:52,992 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-19 12:43:53,003 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-19 12:43:53,005 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-19 12:43:53,006 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-05-19 12:43:53,006 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-05-19 12:43:53,008 [screen.py:init_printer()] - Printer initialized
+2023-05-19 12:43:53,014 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-19 12:43:55,622 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-19 12:43:55,635 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-19 12:43:55,652 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-19 12:43:55,654 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-19 12:46:08,155 [printer.py:change_state()] - Changing state from 'error' to 'disconnected'
+2023-05-19 12:46:08,156 [printer.py:change_state()] - Adding callback for state: disconnected
+2023-05-19 12:46:08,157 [screen.py:state_disconnected()] - ### Going to disconnected
+2023-05-19 12:46:08,162 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-19 12:46:08,177 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-19 12:46:08,191 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-19 12:46:08,195 [screen.py:init_printer()] - Klipper not connected
+2023-05-19 12:46:11,605 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-19 12:46:11,615 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-19 12:46:11,631 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-05-19 12:46:11,648 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-05-19 12:46:11,651 [printer.py:reinit()] - Klipper version: v0.11.0-200-g7511151a-dirty
+2023-05-19 12:46:11,651 [printer.py:reinit()] - # Extruders: 1
+2023-05-19 12:46:11,651 [printer.py:reinit()] - # Temperature devices: 3
+2023-05-19 12:46:11,651 [printer.py:reinit()] - # Fans: 1
+2023-05-19 12:46:11,651 [printer.py:reinit()] - # Output pins: 4
+2023-05-19 12:46:11,652 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-05-19 12:46:11,924 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&extruder&heater_bed&temperature_sensor raspberry_pi&temperature_sensor Caisson&fan&filament_switch_sensor Fusible_Thermique&output_pin relay_1&output_pin relay_2&output_pin relay_3&output_pin Power_Hypercube
+2023-05-19 12:46:11,927 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2023-05-19 12:46:11,928 [printer.py:change_state()] - Adding callback for state: startup
+2023-05-19 12:46:11,941 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-19 12:46:11,951 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-19 12:46:11,960 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-19 12:46:11,962 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-19 12:46:11,963 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-05-19 12:46:11,963 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-05-19 12:46:11,964 [screen.py:init_printer()] - Printer initialized
+2023-05-19 12:46:14,609 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-19 12:46:14,619 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-19 12:46:14,629 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-19 12:46:14,630 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-19 12:46:43,136 [printer.py:change_state()] - Changing state from 'startup' to 'disconnected'
+2023-05-19 12:46:43,136 [printer.py:change_state()] - Adding callback for state: disconnected
+2023-05-19 12:46:43,137 [screen.py:state_disconnected()] - ### Going to disconnected
+2023-05-19 12:46:43,142 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-19 12:46:43,152 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-19 12:46:43,162 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-19 12:46:43,162 [screen.py:init_printer()] - Klipper not connected
+2023-05-19 12:46:46,613 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-19 12:46:46,628 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-19 12:46:46,645 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-05-19 12:46:46,679 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-05-19 12:46:46,684 [printer.py:reinit()] - Klipper version: v0.11.0-200-g7511151a-dirty
+2023-05-19 12:46:46,684 [printer.py:reinit()] - # Extruders: 1
+2023-05-19 12:46:46,684 [printer.py:reinit()] - # Temperature devices: 3
+2023-05-19 12:46:46,684 [printer.py:reinit()] - # Fans: 1
+2023-05-19 12:46:46,685 [printer.py:reinit()] - # Output pins: 4
+2023-05-19 12:46:46,685 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-05-19 12:46:46,948 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&extruder&heater_bed&temperature_sensor raspberry_pi&temperature_sensor Caisson&fan&filament_switch_sensor Fusible_Thermique&output_pin relay_1&output_pin relay_2&output_pin relay_3&output_pin Power_Hypercube
+2023-05-19 12:46:46,951 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2023-05-19 12:46:46,951 [printer.py:change_state()] - Adding callback for state: startup
+2023-05-19 12:46:46,964 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-19 12:46:46,973 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-19 12:46:46,984 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-19 12:46:46,985 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-19 12:46:46,985 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-05-19 12:46:46,986 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-05-19 12:46:46,986 [screen.py:init_printer()] - Printer initialized
+2023-05-19 12:46:49,612 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-19 12:46:49,623 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-19 12:46:49,633 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-19 12:46:49,635 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-19 12:46:49,682 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2023-05-19 12:46:49,682 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-19 12:46:49,685 [main_menu.py:initialize()] - ### Making MainMenu
+2023-05-19 12:46:49,740 [main_menu.py:add_device()] - Adding device: extruder
+2023-05-19 12:46:49,746 [main_menu.py:add_device()] - Adding device: heater_bed
+2023-05-19 12:46:49,752 [main_menu.py:add_device()] - Adding device: temperature_sensor raspberry_pi
+2023-05-19 12:46:49,757 [main_menu.py:add_device()] - Adding device: temperature_sensor Caisson
+2023-05-19 12:46:49,763 [screen.py:attach_panel()] - Current panel hierarchy: main_panel
+2023-05-19 12:53:32,844 [KlippyGtk.py:Dialog()] - Showing dialog <Gtk.Dialog object at 0x7f90755900 (GtkDialog at 0x429bc80)>
+2023-05-19 12:54:30,828 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2023-05-19 12:54:30,828 [printer.py:change_state()] - Adding callback for state: disconnected
+2023-05-19 12:54:30,829 [screen.py:state_disconnected()] - ### Going to disconnected
+2023-05-19 12:54:30,833 [KlippyGtk.py:remove_dialog()] - Removing Dialog
+2023-05-19 12:54:30,838 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-19 12:54:30,850 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-19 12:54:30,859 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-19 12:54:30,860 [screen.py:init_printer()] - Klipper not connected
+2023-05-19 12:54:34,606 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-19 12:54:34,617 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-19 12:54:34,630 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-05-19 12:54:34,649 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-05-19 12:54:34,653 [printer.py:reinit()] - Klipper version: v0.11.0-200-g7511151a-dirty
+2023-05-19 12:54:34,653 [printer.py:reinit()] - # Extruders: 1
+2023-05-19 12:54:34,654 [printer.py:reinit()] - # Temperature devices: 3
+2023-05-19 12:54:34,654 [printer.py:reinit()] - # Fans: 1
+2023-05-19 12:54:34,654 [printer.py:reinit()] - # Output pins: 4
+2023-05-19 12:54:34,654 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-05-19 12:54:34,928 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&extruder&heater_bed&temperature_sensor raspberry_pi&temperature_sensor Caisson&fan&filament_switch_sensor Fusible_Thermique&output_pin relay_1&output_pin relay_2&output_pin relay_3&output_pin Power_Hypercube
+2023-05-19 12:54:34,931 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2023-05-19 12:54:34,932 [printer.py:change_state()] - Adding callback for state: startup
+2023-05-19 12:54:34,952 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-19 12:54:34,956 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-19 12:54:34,968 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-19 12:54:34,969 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-19 12:54:34,970 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-05-19 12:54:34,970 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-05-19 12:54:34,972 [screen.py:init_printer()] - Printer initialized
+2023-05-19 12:54:36,899 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2023-05-19 12:54:36,900 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-19 12:54:36,902 [main_menu.py:initialize()] - ### Making MainMenu
+2023-05-19 12:54:36,957 [main_menu.py:add_device()] - Adding device: extruder
+2023-05-19 12:54:36,963 [main_menu.py:add_device()] - Adding device: heater_bed
+2023-05-19 12:54:36,969 [main_menu.py:add_device()] - Adding device: temperature_sensor raspberry_pi
+2023-05-19 12:54:36,974 [main_menu.py:add_device()] - Adding device: temperature_sensor Caisson
+2023-05-19 12:54:36,980 [screen.py:attach_panel()] - Current panel hierarchy: main_panel
+2023-05-19 12:54:37,612 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-19 12:54:37,617 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-19 12:54:37,628 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-19 12:54:37,629 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-19 12:56:05,100 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2023-05-19 12:56:05,100 [printer.py:change_state()] - Adding callback for state: disconnected
+2023-05-19 12:56:05,101 [screen.py:state_disconnected()] - ### Going to disconnected
+2023-05-19 12:56:05,106 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-19 12:56:05,116 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-19 12:56:05,126 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-19 12:56:05,126 [screen.py:init_printer()] - Klipper not connected
+2023-05-19 12:56:08,606 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-19 12:56:08,617 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-19 12:56:08,627 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-05-19 12:56:08,644 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-05-19 12:56:08,647 [printer.py:reinit()] - Klipper version: v0.11.0-200-g7511151a-dirty
+2023-05-19 12:56:08,647 [printer.py:reinit()] - # Extruders: 1
+2023-05-19 12:56:08,647 [printer.py:reinit()] - # Temperature devices: 3
+2023-05-19 12:56:08,647 [printer.py:reinit()] - # Fans: 1
+2023-05-19 12:56:08,647 [printer.py:reinit()] - # Output pins: 4
+2023-05-19 12:56:08,647 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-05-19 12:56:08,920 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&extruder&heater_bed&temperature_sensor raspberry_pi&temperature_sensor Caisson&fan&filament_switch_sensor Fusible_Thermique&output_pin relay_1&output_pin relay_2&output_pin relay_3&output_pin Power_Hypercube
+2023-05-19 12:56:08,923 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2023-05-19 12:56:08,923 [printer.py:change_state()] - Adding callback for state: startup
+2023-05-19 12:56:08,948 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-19 12:56:08,952 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-19 12:56:08,962 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-19 12:56:08,963 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-19 12:56:08,964 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-05-19 12:56:08,964 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-05-19 12:56:08,965 [screen.py:init_printer()] - Printer initialized
+2023-05-19 12:56:10,891 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2023-05-19 12:56:10,891 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-19 12:56:10,896 [main_menu.py:initialize()] - ### Making MainMenu
+2023-05-19 12:56:10,960 [main_menu.py:add_device()] - Adding device: extruder
+2023-05-19 12:56:10,966 [main_menu.py:add_device()] - Adding device: heater_bed
+2023-05-19 12:56:10,973 [main_menu.py:add_device()] - Adding device: temperature_sensor raspberry_pi
+2023-05-19 12:56:10,979 [main_menu.py:add_device()] - Adding device: temperature_sensor Caisson
+2023-05-19 12:56:10,988 [screen.py:attach_panel()] - Current panel hierarchy: main_panel
+2023-05-19 12:56:11,618 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-19 12:56:11,622 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-19 12:56:11,635 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-19 12:56:11,637 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-19 13:33:41,600 [screen.py:show_screensaver()] - Showing Screensaver
+2023-05-19 13:37:49,765 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2023-05-19 13:37:49,765 [printer.py:change_state()] - Adding callback for state: disconnected
+2023-05-19 13:37:49,767 [screen.py:state_disconnected()] - ### Going to disconnected
+2023-05-19 13:37:49,767 [screen.py:close_screensaver()] - Closing Screensaver
+2023-05-19 13:37:49,778 [screen.py:wake_screen()] - Screen wake up
+2023-05-19 13:37:49,805 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-19 13:37:49,816 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-19 13:37:49,826 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-19 13:37:49,827 [screen.py:init_printer()] - Klipper not connected
+2023-05-19 13:37:52,605 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-19 13:37:52,617 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-19 13:37:52,627 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-05-19 13:37:52,644 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-05-19 13:37:52,647 [printer.py:reinit()] - Klipper version: v0.11.0-200-g7511151a-dirty
+2023-05-19 13:37:52,647 [printer.py:reinit()] - # Extruders: 1
+2023-05-19 13:37:52,647 [printer.py:reinit()] - # Temperature devices: 3
+2023-05-19 13:37:52,647 [printer.py:reinit()] - # Fans: 1
+2023-05-19 13:37:52,647 [printer.py:reinit()] - # Output pins: 4
+2023-05-19 13:37:52,647 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-05-19 13:37:52,924 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&extruder&heater_bed&temperature_sensor raspberry_pi&temperature_sensor Caisson&fan&filament_switch_sensor Fusible_Thermique&output_pin relay_1&output_pin relay_2&output_pin relay_3&output_pin Power_Hypercube
+2023-05-19 13:37:52,927 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2023-05-19 13:37:52,928 [printer.py:change_state()] - Adding callback for state: startup
+2023-05-19 13:37:52,945 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-19 13:37:52,949 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-19 13:37:52,959 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-19 13:37:52,960 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-19 13:37:52,961 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-05-19 13:37:52,961 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-05-19 13:37:52,962 [screen.py:init_printer()] - Printer initialized
+2023-05-19 13:37:55,630 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-19 13:37:55,638 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-19 13:37:55,656 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-19 13:37:55,659 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-19 13:37:55,661 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2023-05-19 13:37:55,661 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-19 13:37:55,666 [main_menu.py:initialize()] - ### Making MainMenu
+2023-05-19 13:37:55,740 [main_menu.py:add_device()] - Adding device: extruder
+2023-05-19 13:37:55,749 [main_menu.py:add_device()] - Adding device: heater_bed
+2023-05-19 13:37:55,757 [main_menu.py:add_device()] - Adding device: temperature_sensor raspberry_pi
+2023-05-19 13:37:55,763 [main_menu.py:add_device()] - Adding device: temperature_sensor Caisson
+2023-05-19 13:37:55,771 [screen.py:attach_panel()] - Current panel hierarchy: main_panel
+2023-05-19 13:38:02,554 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2023-05-19 13:38:02,555 [printer.py:change_state()] - Adding callback for state: disconnected
+2023-05-19 13:38:02,557 [screen.py:state_disconnected()] - ### Going to disconnected
+2023-05-19 13:38:02,564 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-19 13:38:02,580 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-19 13:38:02,597 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-19 13:38:02,600 [screen.py:init_printer()] - Klipper not connected
+2023-05-19 13:38:05,604 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-19 13:38:05,613 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-19 13:38:05,623 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-05-19 13:38:05,639 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-05-19 13:38:05,642 [printer.py:reinit()] - Klipper version: v0.11.0-200-g7511151a-dirty
+2023-05-19 13:38:05,642 [printer.py:reinit()] - # Extruders: 1
+2023-05-19 13:38:05,643 [printer.py:reinit()] - # Temperature devices: 3
+2023-05-19 13:38:05,643 [printer.py:reinit()] - # Fans: 1
+2023-05-19 13:38:05,643 [printer.py:reinit()] - # Output pins: 4
+2023-05-19 13:38:05,643 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-05-19 13:38:05,919 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&extruder&heater_bed&temperature_sensor raspberry_pi&temperature_sensor Caisson&fan&filament_switch_sensor Fusible_Thermique&output_pin relay_1&output_pin relay_2&output_pin relay_3&output_pin Power_Hypercube
+2023-05-19 13:38:05,925 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2023-05-19 13:38:05,925 [printer.py:change_state()] - Adding callback for state: startup
+2023-05-19 13:38:05,943 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-19 13:38:05,948 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-19 13:38:05,957 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-19 13:38:05,958 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-19 13:38:05,959 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-05-19 13:38:05,959 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-05-19 13:38:05,959 [screen.py:init_printer()] - Printer initialized
+2023-05-19 13:38:07,888 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2023-05-19 13:38:07,888 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-19 13:38:07,892 [main_menu.py:initialize()] - ### Making MainMenu
+2023-05-19 13:38:07,944 [main_menu.py:add_device()] - Adding device: extruder
+2023-05-19 13:38:07,949 [main_menu.py:add_device()] - Adding device: heater_bed
+2023-05-19 13:38:07,955 [main_menu.py:add_device()] - Adding device: temperature_sensor raspberry_pi
+2023-05-19 13:38:07,960 [main_menu.py:add_device()] - Adding device: temperature_sensor Caisson
+2023-05-19 13:38:07,965 [screen.py:attach_panel()] - Current panel hierarchy: main_panel
+2023-05-19 13:38:08,616 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-19 13:38:08,621 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-19 13:38:08,632 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-19 13:38:08,634 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-19 13:43:23,320 [KlippyWebsocket.py:get_file_dir()] - Sending server.files.directory
+2023-05-19 13:43:31,619 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2023-05-19 13:43:31,619 [printer.py:change_state()] - Adding callback for state: printing
+2023-05-19 13:43:31,636 [screen.py:_load_panel()] - Loading panel: job_status
+2023-05-19 13:43:31,637 [screen.py:_load_panel()] - Panel path: /home/pi/KlipperScreen/panels/job_status.py
+2023-05-19 13:43:31,786 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2023-05-19 13:43:31,787 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2023-05-19 13:43:31,801 [job_status.py:activate()] - Changing filename: 'None' to 'ksr_fdmtest_v4_PETG_2h39m.gcode'
+2023-05-19 13:43:31,802 [job_status.py:update_file_metadata()] - Update Metadata. File: ksr_fdmtest_v4_PETG_2h39m.gcode Size: 13952410
+2023-05-19 13:43:31,812 [job_status.py:show_file_thumbnail()] - ksr_fdmtest_v4_PETG_2h39m.gcode
+2023-05-19 13:47:17,980 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'cancelled'
+2023-05-19 13:47:18,721 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2023-05-19 13:47:18,721 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-19 13:53:59,826 [files.py:_callback()] - Error in getting metadata for .thumbs/ksr_fdmtest_v4_PETG_2h39m-300x300.png. Retrying in 6 seconds
+2023-05-19 13:53:59,829 [files.py:_callback()] - Error in getting metadata for .thumbs/ksr_fdmtest_v4_PETG_2h39m-32x32.png. Retrying in 6 seconds
+2023-05-19 13:54:03,701 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2023-05-19 13:54:03,702 [printer.py:change_state()] - Adding callback for state: printing
+2023-05-19 13:54:03,709 [job_status.py:set_state()] - Changing job_status state from 'cancelled' to 'printing'
+2023-05-19 13:54:03,726 [job_status.py:update_file_metadata()] - Update Metadata. File: ksr_fdmtest_v4_PETG_2h39m.gcode Size: 13952886
+2023-05-19 13:54:03,734 [job_status.py:show_file_thumbnail()] - ksr_fdmtest_v4_PETG_2h39m.gcode
+2023-05-19 14:03:54,640 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'cancelled'
+2023-05-19 14:03:54,644 [printer.py:get_probe()] - Probe type: bltouch
+2023-05-19 14:03:57,644 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2023-05-19 14:03:57,644 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-19 14:43:53,596 [screen.py:show_screensaver()] - Showing Screensaver
+2023-05-19 16:08:03,801 [files.py:add_file()] - File already exists: ksr_fdmtest_v4_PETG_2h39m.gcode
+2023-05-19 16:08:03,812 [files.py:_callback()] - Error in getting metadata for .thumbs/ksr_fdmtest_v4_PETG_2h39m-300x300.png. Retrying in 6 seconds
+2023-05-19 16:08:03,814 [files.py:_callback()] - Error in getting metadata for .thumbs/ksr_fdmtest_v4_PETG_2h39m-32x32.png. Retrying in 6 seconds
+2023-05-19 16:08:56,194 [files.py:add_file()] - File already exists: ksr_fdmtest_v4_PETG_2h39m.gcode
+2023-05-19 16:08:56,222 [files.py:_callback()] - Error in getting metadata for .thumbs/ksr_fdmtest_v4_PETG_2h39m-300x300.png. Retrying in 6 seconds
+2023-05-19 16:08:56,235 [files.py:_callback()] - Error in getting metadata for .thumbs/ksr_fdmtest_v4_PETG_2h39m-32x32.png. Retrying in 6 seconds
+2023-05-19 16:09:14,209 [files.py:_callback()] - Error in getting metadata for .thumbs/ksr_fdmtest_v4_PETG_2h39m-300x300.png. Retrying in 6 seconds
+2023-05-19 16:09:14,211 [files.py:_callback()] - Error in getting metadata for .thumbs/ksr_fdmtest_v4_PETG_2h39m-32x32.png. Retrying in 6 seconds
+2023-05-19 16:09:28,606 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2023-05-19 16:09:28,606 [printer.py:change_state()] - Adding callback for state: printing
+2023-05-19 16:09:28,607 [screen.py:close_screensaver()] - Closing Screensaver
+2023-05-19 16:09:28,625 [screen.py:wake_screen()] - Screen wake up
+2023-05-19 16:09:28,660 [job_status.py:set_state()] - Changing job_status state from 'cancelled' to 'printing'
+2023-05-19 16:09:28,664 [job_status.py:update_file_metadata()] - Update Metadata. File: ksr_fdmtest_v4_PETG_2h39m.gcode Size: 13953168
+2023-05-19 16:09:28,669 [job_status.py:show_file_thumbnail()] - ksr_fdmtest_v4_PETG_2h39m.gcode
+2023-05-19 16:15:34,934 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'cancelled'
+2023-05-19 16:15:35,901 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2023-05-19 16:15:35,902 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-19 16:16:04,985 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2023-05-19 16:16:04,986 [printer.py:change_state()] - Adding callback for state: printing
+2023-05-19 16:16:04,987 [job_status.py:set_state()] - Changing job_status state from 'cancelled' to 'printing'
+2023-05-19 16:16:04,994 [job_status.py:update_file_metadata()] - Update Metadata. File: ksr_fdmtest_v4_PETG_2h39m.gcode Size: 13953168
+2023-05-19 16:16:05,000 [job_status.py:show_file_thumbnail()] - ksr_fdmtest_v4_PETG_2h39m.gcode
+2023-05-19 17:09:31,330 [screen.py:show_screensaver()] - Showing Screensaver
+2023-05-19 17:09:59,723 [screen.py:close_screensaver()] - Closing Screensaver
+2023-05-19 17:10:11,521 [screen.py:wake_screen()] - Screen wake up
+2023-05-19 18:10:29,307 [screen.py:show_screensaver()] - Showing Screensaver
+2023-05-19 18:11:27,010 [screen.py:close_screensaver()] - Closing Screensaver
+2023-05-19 18:12:00,461 [screen.py:wake_screen()] - Screen wake up
+2023-05-19 18:27:08,741 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2023-05-19 18:27:08,741 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-19 19:12:00,929 [screen.py:show_screensaver()] - Showing Screensaver
+2023-05-19 19:13:48,114 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'cancelled'
+2023-05-19 19:13:48,116 [printer.py:get_probe()] - Probe type: bltouch
+2023-05-19 19:13:48,117 [screen.py:close_screensaver()] - Closing Screensaver
+2023-05-19 19:14:49,565 [screen.py:wake_screen()] - Screen wake up
+2023-05-19 19:15:03,508 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2023-05-19 19:15:03,509 [printer.py:change_state()] - Adding callback for state: printing
+2023-05-19 19:15:03,518 [job_status.py:set_state()] - Changing job_status state from 'cancelled' to 'printing'
+2023-05-19 19:15:03,536 [job_status.py:update_file_metadata()] - Cannot find file metadata. Listening for updated metadata
+2023-05-19 19:15:03,536 [job_status.py:show_file_thumbnail()] - ksr_fdmtest_v4_PETG_2h42m.gcode
+2023-05-19 19:15:03,536 [job_status.py:show_file_thumbnail()] - no pixbuf
+2023-05-19 19:16:34,159 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2023-05-19 19:16:34,159 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-19 19:16:34,304 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2023-05-19 19:16:34,304 [printer.py:change_state()] - Adding callback for state: disconnected
+2023-05-19 20:14:52,766 [screen.py:show_screensaver()] - Showing Screensaver
+2023-05-19 20:16:56,500 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'cancelled'
+2023-05-19 20:16:56,503 [screen.py:close_screensaver()] - Closing Screensaver
+2023-05-19 20:18:00,128 [screen.py:wake_screen()] - Screen wake up
+2023-05-19 20:18:07,638 [files.py:_callback()] - Error in getting metadata for .thumbs/ksr_fdmtest_v4_PETG_2h42m-300x300.png. Retrying in 6 seconds
+2023-05-19 20:18:07,639 [files.py:_callback()] - Error in getting metadata for .thumbs/ksr_fdmtest_v4_PETG_2h42m-32x32.png. Retrying in 6 seconds
+2023-05-19 20:18:18,948 [screen.py:state_disconnected()] - ### Going to disconnected
+2023-05-19 20:18:19,020 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-05-19 20:18:19,057 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-05-19 20:18:19,067 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-05-19 20:18:19,078 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-05-19 20:18:19,259 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-05-19 20:18:19,263 [printer.py:reinit()] - Klipper version: v0.11.0-200-g7511151a-dirty
+2023-05-19 20:18:19,263 [printer.py:reinit()] - # Extruders: 1
+2023-05-19 20:18:19,263 [printer.py:reinit()] - # Temperature devices: 3
+2023-05-19 20:18:19,263 [printer.py:reinit()] - # Fans: 1
+2023-05-19 20:18:19,263 [printer.py:reinit()] - # Output pins: 4
+2023-05-19 20:18:19,264 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-05-19 20:18:19,552 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&extruder&heater_bed&temperature_sensor raspberry_pi&temperature_sensor Caisson&fan&filament_switch_sensor Fusible_Thermique&output_pin relay_1&output_pin relay_2&output_pin relay_3&output_pin Power_Hypercube
+2023-05-19 20:18:19,556 [printer.py:change_state()] - Changing state from 'disconnected' to 'printing'
+2023-05-19 20:18:19,556 [printer.py:change_state()] - Adding callback for state: printing
+2023-05-19 20:18:19,581 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-19 20:18:19,588 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-19 20:18:19,600 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-19 20:18:19,602 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-19 20:18:19,604 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-05-19 20:18:19,604 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-05-19 20:18:19,607 [screen.py:init_printer()] - Printer initialized
+2023-05-19 20:18:19,649 [files.py:_callback()] - Error in getting metadata for .thumbs/ksr_fdmtest_v4_PETG_2h42m-300x300.png. Retrying in 6 seconds
+2023-05-19 20:18:19,651 [files.py:_callback()] - Error in getting metadata for .thumbs/ksr_fdmtest_v4_PETG_2h42m-32x32.png. Retrying in 6 seconds
+2023-05-19 20:19:03,384 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-05-19 20:19:03,391 [printer.py:init_temp_store()] - Temp store: ['temperature_sensor raspberry_pi', 'temperature_sensor Caisson', 'heater_bed', 'extruder']
+2023-05-19 20:19:03,402 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-05-19 20:19:03,403 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-05-19 20:20:50,485 [job_status.py:update_file_metadata()] - Update Metadata. File: ksr_fdmtest_v4_PETG_2h42m.gcode Size: 13888920
+2023-05-19 20:20:50,491 [job_status.py:show_file_thumbnail()] - ksr_fdmtest_v4_PETG_2h42m.gcode
+2023-05-19 20:20:50,666 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2023-05-19 20:20:50,667 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2023-05-19 20:20:50,676 [job_status.py:activate()] - Changing filename: 'None' to 'ksr_fdmtest_v4_PETG_2h42m.gcode'
+2023-05-19 20:20:50,676 [job_status.py:update_file_metadata()] - Update Metadata. File: ksr_fdmtest_v4_PETG_2h42m.gcode Size: 13888920
+2023-05-19 20:20:50,682 [job_status.py:show_file_thumbnail()] - ksr_fdmtest_v4_PETG_2h42m.gcode
+2023-05-19 21:18:01,240 [screen.py:show_screensaver()] - Showing Screensaver
+2023-05-19 21:19:54,619 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2023-05-19 21:19:54,619 [printer.py:change_state()] - Adding callback for state: ready
+2023-05-19 21:19:55,104 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'cancelled'
+2023-05-19 21:19:55,106 [printer.py:get_probe()] - Probe type: bltouch
+2023-05-19 21:19:55,106 [screen.py:close_screensaver()] - Closing Screensaver
+2023-05-19 21:20:56,237 [screen.py:wake_screen()] - Screen wake up
