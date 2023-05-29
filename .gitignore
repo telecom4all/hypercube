@@ -1,0 +1,11 @@
+/home/pi/.cache/
+/home/pi/.config/
+/home/pi/.KlipperScreen-env/
+/home/pi/.local/
+.bash_history
+.bash_logout
+.bashrc
+.kiauh.ini
+.profile
+.wget-hsts
+.Xauthority
